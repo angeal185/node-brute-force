@@ -1,0 +1,24 @@
+{
+  "name": "node-brute-force",
+  "version": "1.0.0",
+  "description": "multi thread brute-force password cracker for nodejs",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeal185/node-brute-force.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angeal185/node-brute-force/issues"
+  },
+  "homepage": "https://github.com/angeal185/node-brute-force#readme"
+}

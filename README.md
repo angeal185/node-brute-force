@@ -5,6 +5,7 @@ multi thread brute-force password cracker for nodejs
 * workers are responsible for decryption
 * will crack any nodejs encrypted data assuming it is configured correct
 * accepts and returns data as byte arrays
+* working fast example at `./example/example.js`
 
 crack data with iv and tag
 ```js

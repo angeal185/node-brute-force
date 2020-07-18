@@ -8,7 +8,7 @@ const { Crack } = require('./node-brute-force');
 Crack({
   workers: 1, // clusters
   dev: true, // unshift if true | pop if false
-  verbose: 100, // status log to console interval ms
+  verbose: 100, // status log to console interval ms || false to disable
   file: {
     enabled: true, // enable write to file
     dest: './ptext.json' // result dest
@@ -45,7 +45,7 @@ const { Crack } = require('./node-brute-force');
 Crack({
   workers: 1, // clusters
   dev: true, // unshift if true | pop if false
-  verbose: 10000, // status log to console interval ms
+  verbose: 10000, // status log to console interval ms || false to disable
   file: {
     enabled: true, // enable write to file
     dest: './ptext.json' // result dest

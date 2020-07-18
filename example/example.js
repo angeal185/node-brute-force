@@ -5,6 +5,7 @@ crypto = require('crypto');
 
 Crack({
   workers: 1,
+  threads: 5,
   dev: true,
   verbose: 100,
   file: {

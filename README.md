@@ -3,6 +3,8 @@ multi thread brute-force password cracker for nodejs
 
 * master is responsible for creating and updating the decipher pad
 * workers are responsible for decryption
+* decryption is asynchronous
+* each worker can have multiple decryption threads running simultaneously
 * will crack any nodejs encrypted data assuming it is configured correct
 * accepts and returns data as byte arrays
 * working fast example at `./example/example.js`
@@ -13,7 +15,8 @@ const { Crack } = require('./node-brute-force');
 
 Crack({
   workers: 1, // clusters
-  dev: true, // unshift if true | pop if false
+  threads: 10, // simultaneous decryptions per worker
+  dev: true, // unshift() pad if true | pop() pad (faster but not in order) if false
   verbose: 100, // status log to console interval ms || false to disable
   file: {
     enabled: true, // enable write to file
